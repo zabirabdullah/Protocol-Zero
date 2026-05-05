@@ -111,7 +111,6 @@ MajorReportSchema.virtual('score').get(function () {
 // ─── Indexes ──────────────────────────────────────────────────────────────────
 // 2dsphere on nested coordinate field inside the locations array
 MajorReportSchema.index({ 'locations.coordinate': '2dsphere' });
-MajorReportSchema.index({ postid: 1 }, { unique: true });
 MajorReportSchema.index({ status: 1 });
 MajorReportSchema.index({ category: 1 });
 MajorReportSchema.index({ time: -1 });

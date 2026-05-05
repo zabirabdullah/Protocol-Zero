@@ -130,7 +130,6 @@ MinorReportSchema.virtual('score').get(function () {
 
 // ─── Indexes ──────────────────────────────────────────────────────────────────
 MinorReportSchema.index({ location: '2dsphere' });
-MinorReportSchema.index({ postid: 1 }, { unique: true });
 MinorReportSchema.index({ status: 1 });
 MinorReportSchema.index({ category: 1 });
 MinorReportSchema.index({ time: -1 });
